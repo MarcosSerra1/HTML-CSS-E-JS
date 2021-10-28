@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Exercicios HTML</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Exercicios HTML</h1>
+
+    </header>
+
+    <nav>
+
+        <a href="exercicios/tagparatextos01.html">Tag para textos #01</a> <br><br>
+
+        <a href="exercicios/tagparatextos02.html">Tag para textos #02</a> <br><br>
+
+        <a href="exercicios/listas.html">Listas</a> <br><br>
+
+        <a href="exercicios/listasaninhadas.html">Listas Aninhadas</a> <br><br>
+
+        <a href="exercicios/links01.html">Link #01</a> <br><br>
+
+    </nav>
+
+    <section id="conteudo"></section> <!--nosso conteudo e exebido aqui com o ajax trazendo outro arquivo para ca-->
+
+    <script>
+
+        document.querySelectorAll("a").forEach(link =>{
+            const conteudo = document.getElementById("conteudo")
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        }) 
+    </script> <!--chamada ajax para coneudo dentro do codigo-->
+
+    <footer>
+        <br/>
+        Curso de Web Moderno
+    </footer>
+</body>
+</html>
