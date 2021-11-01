@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+        <p>aula sobre formulario</p>
+    </header>
+
+    <form method="post">
+        <input type="hidden" name="id" value="3"> <!--input vazio-->
+        <input type="text" name="nome">
+        <input type="password" name="senha">
+        <textarea name="bio" cols="30" rows="10"></textarea>
+        <div>
+            <input type="radio" name="tipo"> Admin
+            <input type="radio" name="tipo"> Regular
+            <input type="radio" name="tipo"> Professor
+        </div> <!--botão tipo-->
+
+        <div>
+            <input type="checkbox" name="ativo"> Ativo
+        </div> <!--checkbox-->
+
+        <select name="estado">
+            <option value="">Selecione</option>
+            <option value="ac">Acre</option>
+            <option value="ba">Bahia</option>
+            <option value="ce">Ceara</option>
+            <option value="ma">Maranhão</option>
+        </select> <!--estados-->
+
+        <select name="interesses" multiples size="7">
+            <option value="js">Javascript</option>
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="go">Go</option>
+            <option value="c">C</option>
+        </select> <!--interesses-->
+
+        <button formaction="http://localhost:3003/usuarios">Incluir</button>
+        <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
+    </form>
+
+    <style>
+        input,
+        textarea,
+        select {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type=radio],
+        input[type=checkbox] {
+            display: inline;
+        }
+    </style>
+</body>
+</html>
