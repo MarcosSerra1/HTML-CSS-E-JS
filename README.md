@@ -6,4 +6,4 @@
  
  Bem espero que gostem do conteúdo, eles são atualizados quase que diariamente! 
 
-vcs podem da sujestão para melhorar! 🖖🤓
+vcs podem da sugestão para melhorar! 🖖🤓
