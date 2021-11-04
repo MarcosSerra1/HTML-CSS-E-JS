@@ -1,4 +1,4 @@
-### HTML
+### HTML, CSS, JS 
  Aulas sobre html css e js
    ##
  Nesse repositorio conte aulas em forma de códigos, no index.html vcs tem acesso as outras aulas.
