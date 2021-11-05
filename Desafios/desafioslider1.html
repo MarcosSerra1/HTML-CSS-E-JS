@@ -72,7 +72,6 @@
     </div>
 
     <script>
-
         function mover(elem, inicio, fim, passo, callback) {
             const novoInicio = inicio - passo
             if(novoInicio >= fim) {
@@ -83,8 +82,11 @@
             }
         }
 
-        const p = document.querySelector('[vm-slider] > p')
+        const p = document.querySelector('[wm-slider] > p')
         p.style.display = 'block'
+        mover(p, 1500, -400, 5, () => {
+            console.log('Terminou!!!')
+        })
     </script>
 </body>
 </html>

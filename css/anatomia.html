@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .selector {
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /* multiplos valores */
+            border: solid 5px navy;  /* propriedade de acesso mais rapido / shorthand property */
+            font-family: Helvetica, sans-serif;
+            /* fincoes */
+            width: calc(100% - 40px);
+            background-color: rgb(34, 153, 189);
+        }
+
+        /* usando uma pseudo-classe apenas ":"*/
+        .selector:hover {
+            background-color: black;
+        } /* faz com que o mouse mude a cor da div nesse caso */
+
+        /* usando um pseudo-elemento são ":" */
+        .selector::first-letter {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        /* padrão de nomeclatura? */
+        /* dash-case ou comelcase? */
+        /* vc pode usar as duas contando que mantenha uma consistencia no codigo */
+        
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+</body>
+
+</html>
