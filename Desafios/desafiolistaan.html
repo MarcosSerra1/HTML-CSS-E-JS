@@ -12,10 +12,10 @@
     <h2>Projeto</h2>
     <ul class="tree">
         <li>
-            <span wm-folder>Backend</span>
+            <span ms-folder>Backend</span>
             <ul>
                 <li>
-                    <span wm-folder>app</span>
+                    <span ms-folder>app</span>
                     <ul>
                         <li>produto.js</li>
                         <li>usuario.js</li>
@@ -23,7 +23,7 @@
                     </ul>
                 </li>
                 <li>
-                    <span wm-folder>config</span>
+                    <span ms-folder>config</span>
                     <ul>
                         <li>banco.js</li>
                         <li>rotas.js</li>
@@ -32,10 +32,10 @@
                 </li>
             </ul>
             <li>
-                <span wm-folder>Frontend</span>
+                <span ms-folder>Frontend</span>
                 <ul>
                     <li>
-                        <span wm-folder>public</span>
+                        <span ms-folder>public</span>
                         <ul>
                             <li>app.css</li>
                             <li>app.js</li>
@@ -48,12 +48,12 @@
     </ul>
     <script>
 
-        document.querySelectorAll("[wm-folder]").forEach(folder =>{
+        document.querySelectorAll("[ms-folder]").forEach(folder =>{
             folder.onclick = function(e) {
                 const ul = folder.nextElementSibling
                 const d = ul.style.display
                 ul.style.display = d === 'none' ? 'block' : 'none'
-               // console.log (ul) //serve para testa o console
+               // console.log (ul) //serve para debugar o codigo
             }
         })
     </script>
